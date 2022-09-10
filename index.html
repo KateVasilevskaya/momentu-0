@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>momentum</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="player">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+
+        <ul class="play-list">
+          <li class="play-item">Aqua Caelestis</li>
+          <li class="play-item">River Flows In You</li>
+          <li class="play-item">Summer Wind</li>
+          <li class="play-item">Ennio Morricone</li>
+        </ul>
+      </div>
+      <div class="weather">
+        <input type="text" class="city" value="Minsk" />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind">Wind speed:</div>
+        <div class="humidity">Humidity:</div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+      <time class="time"></time>
+      <date class="date"></date>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input placeholder=" " type="text" class="name" />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="settings">
+        <div class="settings__panel">
+          <div class="settings__panel-container">
+            <div class="settings__block">
+              <p class="settings__block-title classENGLanguage"></p>
+              <div class="lang">
+                <button class="lang__ru">RU</button> <span>/</span>
+                <button class="lang__eng lang__active">ENG</button>
+              </div>
+              <div class="settings__item">
+                <p class="settings__item-title classENGTime"></p>
+                <label class="settings__item-switch"
+                  ><input
+                    type="checkbox"
+                    checked="checked"
+                    id="settings-time" />
+                  <span class="settings__item-slider"></span
+                ></label>
+              </div>
+              <div class="settings__item">
+                <p class="settings__item-title classENGDate"></p>
+                <label class="settings__item-switch"
+                  ><input
+                    type="checkbox"
+                    checked="checked"
+                    id="settings-date" />
+                  <span class="settings__item-slider"></span
+                ></label>
+              </div>
+              <div class="settings__item">
+                <p class="settings__item-title classENGGreeting"></p>
+                <label class="settings__item-switch"
+                  ><input
+                    type="checkbox"
+                    checked="checked"
+                    id="settings-greeting" />
+                  <span class="settings__item-slider"></span
+                ></label>
+              </div>
+              <div class="settings__item">
+                <p class="settings__item-title classENGWeather"></p>
+                <label class="settings__item-switch"
+                  ><input
+                    type="checkbox"
+                    checked="checked"
+                    id="settings-quotes" />
+                  <span class="settings__item-slider"></span
+                ></label>
+              </div>
+              <div class="settings__item">
+                <p class="settings__item-title classENGAudio"></p>
+                <label class="settings__item-switch"
+                  ><input
+                    type="checkbox"
+                    checked="checked"
+                    id="settings-weather" />
+                  <span class="settings__item-slider"></span
+                ></label>
+              </div>
+              <div class="settings__item settings__item-title__audio">
+                <p class="settings__item-title classENGQuotes"></p>
+                <label class="settings__item-switch"
+                  ><input
+                    type="checkbox"
+                    checked="checked"
+                    id="settings-audio" />
+                  <span class="settings__item-slider"></span
+                ></label>
+              </div>
+              <div class="foto">
+                <button class="foto_item">GitHub</button> <span>/</span>
+                <button class="foto_item">Unsplash API</button><span>/</span>
+                <button class="foto_item">Flickr API</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="settings__button"></button>
+      </div>
+      <button class="change-quote"></button>
+      <div class="quote">
+        <div class="quote-text"></div>
+        <div class="author"></div>
+      </div>
+    </footer>
+    <script type="module" src="js/playList.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
